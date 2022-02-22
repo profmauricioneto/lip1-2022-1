@@ -12,19 +12,29 @@ import java.util.Scanner;
  * @author mauricio.moreira
  */
 public class Fibonacci {
-    public static void fibonacci(int termos) {
-        int aux, a=0, b=1;
-        if (termos < 0) {
-            System.out.println("Error");
+    public static void fibonacci(int amount) {
+        if (amount < 0) {
+            System.out.println("Its not possible");
+            System.exit(0);
         } else {
-            
+            int a = 0, b = 1, aux;
+            for (int i = 0; i < amount; i++) {
+                aux = a + b;
+                System.out.println(a);
+                a = b;
+                b = aux;
+            }
         }
     }
-    public static void main(String[] args) {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) throws Exception {
         Scanner input = new Scanner(System.in);
-        int termos;
-        System.out.print("Digite o número de Termos: ");
-        termos = input.nextInt();
-        
+        int amount;
+        System.out.print("Number: ");
+        amount = input.nextInt();
+        input.close();
+        fibonacci(amount);
     }
 }
