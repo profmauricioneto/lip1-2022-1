@@ -26,3 +26,5 @@ hs_err_pid*
 /FirstCodeOO/nbproject/private/
 /FirstCodeOO/build/
 /JavaContents/dist/
+
+*.DS_Store
