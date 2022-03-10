@@ -91,7 +91,7 @@ public class CryptoWord {
      * This is a main method responsible to receive words or messages and call the encrypt/decrypt algorithm
      * @param args
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Scanner input = new Scanner(System.in).useDelimiter("\n");
         String word;
         String option;
@@ -110,6 +110,7 @@ public class CryptoWord {
             
             String newWord = cipherWord(word, key);
             System.out.println("Cipher word: " + newWord);
+            Thread.sleep(5000);
             System.out.println("Decipher word: " + decipherWord(newWord, key)); 
             
         } else if (option.contains("m") || option.contains("message")){
@@ -120,6 +121,7 @@ public class CryptoWord {
             
             String cipherMessage = cipherMessage(message, key);
             System.out.println("Cipher message: " + cipherMessage);
+            Thread.sleep(5000);
             System.out.println("Decipher message: " + decipherMessage(cipherMessage, key));
         
         } else {
