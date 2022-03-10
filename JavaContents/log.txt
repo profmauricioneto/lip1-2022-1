@@ -1,0 +1,9 @@
+sobrescrevendo o arquivo
+testando ao final
+testando o buffered writer
+Teste
+teste
+ola
+mundo
+cruel
+ola mundo cruel
