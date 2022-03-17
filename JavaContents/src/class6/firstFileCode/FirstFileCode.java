@@ -19,17 +19,21 @@ import java.io.FileReader;
  * @author maumneto
  */
 public class FirstFileCode {
-    public static void readDataWithBF(File file) {
+    public static void readDataWithBF(File file) throws IOException {
         String lines = null;
         try {
-            BufferedReader br = new BufferedReader(new FileReader(file.getName()));
+            FileReader fr = new FileReader(file.getName());
+            BufferedReader br = new BufferedReader(fr);
             while((lines = br.readLine()) != null) {
                 System.out.println(lines);
             }
-        } catch (IOException ex) {
+            br.close();
+            fr.close();
+        } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } 
     }
+    
     public static void readData(File file) {
         try {
             Scanner scan = new Scanner(file);
@@ -44,8 +48,8 @@ public class FirstFileCode {
     
     public static void writeDataWithBufferedWriter(File file, String message) {
         try {
-            BufferedWriter bf = new BufferedWriter(new FileWriter(file.getName(), true));
-//            FileWriter writerObj = new FileWriter(file.getName(), true);
+            //BufferedWriter bf = new BufferedWriter(new FileWriter(file.getName(), true));
+            FileWriter writerObj = new FileWriter(file.getName(), true);
             bf.write(message.concat("\n"));
             bf.close();
         } catch (IOException ex) {
