@@ -50,8 +50,8 @@ public class FirstFileCode {
         try {
             //BufferedWriter bf = new BufferedWriter(new FileWriter(file.getName(), true));
             FileWriter writerObj = new FileWriter(file.getName(), true);
-            bf.write(message.concat("\n"));
-            bf.close();
+            writerObj.write(message.concat("\n"));
+            writerObj.close();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
