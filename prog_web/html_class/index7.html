@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Tabelas em HTML</title>
+    <style>
+        table, tr, th, td {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #000;
+            border-collapse: collapse;
+        }
+        th {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tabela 1</h2>
+    <table>
+        <!-- linha 1 -->
+        <tr>
+            <th><b>Aluno</b></th>
+            <th><b>ID</b></th>
+            <th><b>Nota</b></th>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <td>Mauricio</td>
+            <td>1</td>
+            <td>8.0</td>
+        </tr>
+        <!-- linha 3 -->
+        <tr>
+            <td>Fulano</td>
+            <td>2</td>
+            <td>10.0</td>
+        </tr>
+    </table>
+
+    <hr/>
+
+    <h2>Tabela 2</h2>
+
+    <table>
+        <caption>Exemplo de Tabela 2</caption>
+        <thead>
+            <tr>
+                <th><b>Aluno</b></th>
+                <th><b>ID</b></th>
+                <th><b>Curso</b></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mauricio</td>
+            <td>1</td>
+            <td>Analise e Desenvolvimento de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>2</td>
+            <td>Sistemas de Informação</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr/>
+
+    <h2>Tabela 3</h2>
+    <table>
+        <!-- linha 1 -->
+        <tr>
+            <th><b>Nome</b></th>
+            <td>Mauricio</td>
+            <td>Fulano</td>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <th><b>ID</b></th>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <!-- linha 3 -->
+        <tr>
+            <th><b>Curso</b></th>
+            <td>ADS</td>
+            <td>SI</td>
+            </tr>
+    </table>
+
+    <hr/>
+
+    <h2>Tabela 4</h2>
+
+    <table>
+        <!-- linha 1 -->
+        <tr>
+            <th rowspan="3"><b>Aluno</b></th>
+            <th colspan="2"><b>Nota</b></th>
+        </tr>
+        <!-- linha 2 -->
+        <tr>
+            <td>Mauricio</td>
+            <td>5.9</td>
+            <!-- <td>8.0</td> -->
+        </tr>
+        <!-- linha 3 -->
+        <tr>
+            <!-- <td>Fulano</td> -->
+            <td>Fulano</td>
+            <td>10.0</td>
+        </tr>
+    </table>
+</body>
+</html>
