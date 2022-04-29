@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utilizando Classes</title>
+    <style>
+        .flash_card {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            background-color: rgba(0,0,255, 0.5);
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .flash_card_2 {
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            background-color: rgba(255,0,0, 0.5);
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .new_font {
+            font-family: monospace  ;
+        }
+
+        #new_size {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Class Element</h1>
+
+    <div class="flash_card new_font" id="new_size">
+        <h2 id="my_header">My Title</h2>
+        <p>This is my flash card using class element.</p>
+    </div>
+
+    <div class="flash_card_2">
+        <h2>My Title</h2>
+        <p>This is my flash card using class element.</p>
+    </div>
+
+    <div class="flash_card_2">
+        <h2>My Title</h2>
+        <p>This is my flash card using class element.</p>
+    </div>
+
+    <div class="flash_card">
+        <h2>My Title</h2>
+        <p>This is my flash card using class element.</p>
+    </div>
+    <button onclick="hideCard()">hide</button>
+    <button onclick="showCard()">show</button>
+    <button onclick="modifyHeader()">alter header</button>
+    <script>
+        function hideCard() {
+            let x = document.getElementsByClassName("flash_card");
+            for(i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+        function showCard() {
+            let x = document.getElementsByClassName("flash_card");
+            for(var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+        function modifyHeader() {
+            document.getElementById("my_header").innerHTML = "This is my new title!";
+            console.log("modificou!");
+        }
+    </script>
+</body>
+</html>

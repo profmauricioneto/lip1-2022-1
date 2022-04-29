@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Estilo de Tabela</title>
+    <style>
+        table, th, tr, td {
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            border-collapse: collapse;
+        }
+        th:nth-child(even), td:nth-child(even) {
+            background-color: chartreuse;
+        }
+        th:nth-child(odd), td:nth-child(odd) {
+            background-color: cyan;
+        }
+        /* tr:nth-child(even) {
+            background-color: chartreuse;
+        }
+        tr:nth-child(odd) {
+            background-color: blueviolet;
+        } */
+    </style>
+</head>
+<body>
+    <h2>Tabela com cores alternadas</h2>
+    <table>
+        <tr>
+            <th><b>Aluno</b></th>
+            <th><b>ID</b></th>
+            <th><b>Nota</b></th>
+            <th><b>Curso</b></th>
+        </tr>
+        <tr>
+            <td>Mauricio</td>
+            <td>1</td>
+            <td>8.0</td>
+            <td>Sistemas de Informação</td>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>2</td>
+            <td>10.0</td>
+            <td>Análise e Desenvolvimento de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Mauricio</td>
+            <td>3</td>
+            <td>8.0</td>
+            <td>Sistemas de Informação</td>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>4</td>
+            <td>10.0</td>
+            <td>Análise e Desenvolvimento de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Mauricio</td>
+            <td>5</td>
+            <td>8.0</td>
+            <td>Análise e Desenvolvimento de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>6</td>
+            <td>10.0</td>
+            <td>Análise e Desenvolvimento de Sistemas</td>
+        </tr>
+    </table>
+
+
+    <h2>Tabela 2</h2>
+
+    <table>
+        <caption>Exemplo de Tabela 2</caption>
+        <thead>
+            <tr>
+                <th><b>Aluno</b></th>
+                <th><b>ID</b></th>
+                <th><b>Curso</b></th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Mauricio</td>
+            <td>1</td>
+            <td>Analise e Desenvolvimento de Sistemas</td>
+        </tr>
+        <tr>
+            <td>Fulano</td>
+            <td>2</td>
+            <td>Sistemas de Informação</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
