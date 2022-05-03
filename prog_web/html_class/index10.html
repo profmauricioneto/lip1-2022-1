@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My First Forms</title>
+    <style>
+        #myform {
+            padding: 5px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+
+        input {
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>My Form</h2>
+    <div id="myform">
+        <form>
+            <label for="firstname">First Name</label> <br />
+            <input type="text" id="firstname" name="firstname" placeholder="enter with your first name" />
+            <br />
+            <label for="lastname">Last Name </label>
+            <br />
+            <input type="text" id="lastname" name="lastname" placeholder="enter with your last name" />
+            <br />
+
+            <hr />
+
+            <h3>Choose your gender</h3>
+            <input type="radio" id="male" name="gender" value="Male" checked />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="undefined" name="gender" value="Undefined" />
+            <label for="undefined">Undefined</label>
+
+            <hr />
+
+            <h3>Preferences</h3>
+
+            <input type="checkbox" id="comedy" name="preferences" value="Comedy" />
+            <label for="comedy">Comedy</label>
+
+            <input type="checkbox" id="coding" name="preferences" value="Coding" checked />
+            <label for="coding">Coding</label>
+            <br />
+            <input type="checkbox" id="research" name="preferences" value="Research" />
+            <label for="research">Research</label>
+
+            <input type="checkbox" id="soapopera" name="preferences" value="SoapOpera" />
+            <label for="soapopera">Soap Opera</label>
+            <br />
+            <input type="checkbox" id="styling" name="preferences" value="Styling" />
+            <label for="styling">Styling</label>
+
+            <hr />
+
+            <label for="estadocivil">Estado Civil</label>
+            <select name="estados" id="estadocivil">
+                <option value="Solteiro" selected>Solteiro</option>
+                <option value="Casado">Casado</option>
+                <option value="Noivo">Noivo</option>
+                <option value="UniaoEstavel">União Estável</option>
+            </select>
+
+            <hr />
+
+            <label for="biografia">Biografia</label> <br />
+            <textarea name="biografia" id="biografia" cols="30" rows="10"
+                placeholder="Escreva sobre você..."></textarea>
+
+            <br />
+            <input type="submit" onclick="getFullName()" />
+        </form>
+    </div>
+</body>
+<script>
+    function getFullName() {
+        var fname = document.getElementById('firstname').value;
+        var lname = document.getElementById('lastname').value;
+        var fullname = fname + " " + lname;
+        window.alert(fullname)
+    }
+</script>
+
+</html>
