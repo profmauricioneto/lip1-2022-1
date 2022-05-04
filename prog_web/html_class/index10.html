@@ -76,7 +76,7 @@
                 placeholder="Escreva sobre você..."></textarea>
 
             <br />
-            <input type="submit" onclick="getFullName()" />
+            <input type="submit" onclick="getAllData()"/>
         </form>
     </div>
 </body>
@@ -84,8 +84,36 @@
     function getFullName() {
         var fname = document.getElementById('firstname').value;
         var lname = document.getElementById('lastname').value;
-        var fullname = fname + " " + lname;
-        window.alert(fullname);
+        var fullName = fname + " " + lname;
+        console.log(fullName);
+        return fullName;
+    }
+    function getGender() {
+        let myGender;
+        var gender = document.getElementsByName("gender");
+        for (var i = 0; i < gender.length; i++) {
+            if (gender[i].checked) {
+                myGender = gender[i].value;
+            }
+        }
+        console.log(myGender);
+        return myGender;
+    }
+    function getPreferences() {
+        var myPreferences = "";
+        var preferences = document.getElementsByName("preferences");
+        for (var i = 0; i < preferences.length; i++) {
+            if (preferences[i].checked) {
+                myPreferences = myPreferences + preferences[i].value + ", ";
+            }
+        }
+        return myPreferences;
+    }
+    function getAllData() {
+        var fullname = getFullName();
+        var mygender = getGender();
+        var myPreferences = getPreferences();
+        window.alert(fullname + "\n" + mygender + "\n" + myPreferences);
     }
 </script>
 
