@@ -22,6 +22,12 @@
     <h2>My Form</h2>
     <div id="myform">
         <form>
+            <legend>
+                <p>
+                    <b>Dados Pessoais</b>
+                </p>
+            </legend>
+            <fieldset>
             <label for="firstname">First Name</label> <br />
             <input type="text" id="firstname" name="firstname" placeholder="enter with your first name" />
             <br />
@@ -39,9 +45,14 @@
             <label for="female">Female</label>
             <input type="radio" id="undefined" name="gender" value="Undefined" />
             <label for="undefined">Undefined</label>
-
+        </fieldset>
             <hr />
-
+        <legend>
+            <p>
+                <b>Dados Opcionais</b>
+            </p>
+        </legend>
+        <fieldset>
             <h3>Preferences</h3>
 
             <input type="checkbox" id="comedy" name="preferences" value="Comedy" />
@@ -76,7 +87,34 @@
                 placeholder="Escreva sobre você..."></textarea>
 
             <br />
+
+            <hr />
+
+            <h3>Escolaridade</h3>
+            <input type="text" list="escolaridade" name="escolaridade"/>
+            <datalist id="escolaridade">
+                <option value="Básico"></option>
+                <option value="Médio"></option>
+                <option value="Superior Incompleto"></option>
+                <option value="Superior Completo"></option>
+            </datalist>
+
+            <hr />
+
+            <h3>Exemplo Output</h3>
+            <div oninput="res.value = parseInt(fvalue.value) + parseInt(svalue.value)">
+                <input type="number" id="fvalue" name="fvalue" placeholder="ex:10"/>
+                +
+                <input type="number" id="svalue" name="svalue" placeholder="ex:10"/>
+                =
+                <output name="res" for="output"></output>
+                <br/>
+                <button type="submit">Calcular</button>
+            </div>
+
+        </fieldset>
             <input type="submit" onclick="getAllData()"/>
+            <button type="button" onclick="console.log('Botao Clicado!')">Aperte Aqui!</button>
         </form>
     </div>
 </body>
