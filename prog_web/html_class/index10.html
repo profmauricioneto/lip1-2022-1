@@ -112,6 +112,15 @@
                 <button type="submit">Calcular</button>
             </div>
 
+            <hr/>
+
+            <h3>Your Age</h3>
+            <div oninput="result.value = agevalue.value;">
+                <input type="range" name="agevalue" value="0" max="150"/>
+                <br/>
+                Your age: <output name="result" for="agevalue"></output>
+            </div>
+
         </fieldset>
             <input type="submit" onclick="getAllData()"/>
             <button type="button" onclick="console.log('Botao Clicado!')">Aperte Aqui!</button>
