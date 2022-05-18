@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS 3</title>
+    <style>
+        .my-card {
+            color: black;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid black;
+        }
+        /* seletor de irmão adjacente */
+        div + p {
+            color: blue;
+            border: 1px solid black;
+        }
+        /* seletor de descendência */
+        ul li {
+            text-align: left;
+        }
+        /* seletor de filho (filhos ul de div) */
+        div > ul {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-card">
+        <h1>Hello World!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum risus, lacinia et elit sodales, gravida suscipit odio. Aliquam rutrum blandit nisi at sodales.
+        </p> 
+        <!-- elemento p está em um container div -->
+        <div>
+            <p>Fusce eget magna volutpat, malesuada lectus sit amet, consequat tortor. Praesent lobortis in arcu eget feugiat. Duis sed massa metus. Sed bibendum elementum dignissim. Maecenas rutrum placerat imperdiet.</p> 
+        </div>
+        <!-- este elemento será o seu adjacent simbling ou irmão adjacente -->
+        <p>Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.</p>
+        
+        <ul>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+        </ul>
+    </div>
+
+    <div class="my-card">
+        <h1>Hello World!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum risus, lacinia et elit sodales, gravida suscipit odio. Aliquam rutrum blandit nisi at sodales.
+        </p> 
+        
+        <!-- elemento p está em um container div -->
+        <div>
+            <p>Fusce eget magna volutpat, malesuada lectus sit amet, consequat tortor. Praesent lobortis in arcu eget feugiat. Duis sed massa metus. Sed bibendum elementum dignissim. Maecenas rutrum placerat imperdiet.</p> 
+        </div>
+        <!-- este elemento será o seu adjacent simbling ou irmão adjacente -->
+
+        <p>Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.</p>
+        
+        <ul>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+            <li>Exemplo 1</li>
+        </ul>
+    </div>
+</body>
+</html>

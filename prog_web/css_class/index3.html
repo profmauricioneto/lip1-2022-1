@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examplo CSS 4</title>
+    <style>
+        div {
+            border-width: 2px;
+            border-style: solid;
+            border-color: black;
+        }
+        /* pseudo-classes para hyperlinks */
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: red;
+        }
+        a:hover {
+            color: darkgray;
+        }
+        a:active {
+            color: green;
+        }
+        /* pseudo-elementos */
+        /* primeira linha do texto será azul e espaçada */
+        p::first-line {
+            color: blue;
+            word-spacing: 1em;
+            font-variant: normal;
+        }
+        /* primeira letra do texto será destacada das demais */
+        p::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        /* elementos selecionados ficaram amarelos */
+        ::selection {
+            background-color: yellow;   
+        }
+        /* pseudo-elemento para estilizar os bullets das listas */
+        ::marker {
+            font-size: 20px;
+            color: blue;
+        }
+        /* adiciona a imagem antes da tag referenciada */
+        div::before {
+            content: url(/img/florkandcows.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="my-card">
+        <h1>Hello World!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum risus, lacinia et elit sodales, gravida suscipit odio. Aliquam rutrum blandit nisi at sodales.</p>
+    </div>
+
+    <hr/>
+
+    <nav>
+        <a href="test0">Google</a>
+        <a href="teste1">Google</a>
+        <a href="teste2">Google</a>
+        <a href="teste3">Google</a>
+    </nav>
+
+    <hr/>
+
+    <h1>Lista Não Ordenada</h1>
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+</body>
+</html>

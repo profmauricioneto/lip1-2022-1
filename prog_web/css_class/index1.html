@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo CSS 2</title>
+    <style>
+        * {
+            font-family: monospace;
+            padding: 0;
+        }
+        .my-card {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+ 
+        .my-card:hover {
+            background-color: blue;
+        } 
+    </style>
+</head>
+<body>
+    <div class="my-card">
+        <h1>Hello <span>World!</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ipsum risus, lacinia et elit sodales, gravida suscipit odio. Aliquam rutrum blandit nisi at sodales.</p>
+    </div>
+    <button onclick="addCard()">Add Card</button>
+</body>
+
+<script>
+    function addCard() {
+        var card = document.createElement('div');
+        card.classList.add('my-card');
+        var title = document.createElement('h1');
+        title.textContent = "Hello World";
+        var paragraph = document.createElement('p');
+        paragraph.textContent = "this is my card";
+        card.appendChild(title);
+        card.appendChild(paragraph);
+        document.body.appendChild(card);
+    }
+</script>
+</html>
