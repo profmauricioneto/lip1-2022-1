@@ -1,0 +1,16 @@
+.box {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    opacity: 0.5;
+    border: 5px solid red;
+    border-radius: 10px;
+}
+
+body {
+    /* background-image: url("../../img/florkandcows.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment:  fixed; */
+    background: url("../../img/florkandcows.png") no-repeat top center fixed;
+}

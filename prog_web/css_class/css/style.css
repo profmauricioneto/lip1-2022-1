@@ -1,0 +1,12 @@
+* {
+    font-family: monospace;
+}
+
+.my-card {
+    border: 1px solid red;
+}
+
+div ~ p {
+    border: 1px solid black;
+    color: rgb(0, 0, 255);
+}
