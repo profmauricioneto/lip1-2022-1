@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilizando Media Query</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            background-color: blue;
+            float: left;
+            width: 25%;
+            padding: 10px;
+        }
+
+        @media all and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo de uso de Media Query</h2>
+    <div class="row">
+        <div class="column">
+            <h3>Título 1</h3>
+            <p>Exemplo de conteúdo...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Título 2</h3>
+            <p>Exemplo de conteúdo...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Título 3</h3>
+            <p>Exemplo de conteúdo...</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <h3>Título 4</h3>
+            <p>Exemplo de conteúdo...</p>
+        </div>
+    </div>
+</body>
+</html>

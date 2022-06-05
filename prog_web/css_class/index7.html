@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .f-div {
+            width: 400px;
+            height: 1200px;
+            background-color: cadetblue;
+        }
+        .s-div {
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: sticky;
+            top: 100px;
+        }
+
+        .overflow-example {
+            position: absolute;
+            top: 0;
+            width: 300px;
+            border: 5px solid red;
+            height: 300px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="f-div">
+        <div class="s-div"></div>
+    </div>
+
+    <div class="overflow-example">
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.
+
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.
+        
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.
+
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim. Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex. Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque lorem maximus.
+    </div>
+</body>
+<script>
+    // var myDiv = document.getElementsByClassName("s-div");
+    // for (i = 0; i <= 200; i++) {
+    //     myDiv.style.top = ''
+    // }
+</script>
+</html>

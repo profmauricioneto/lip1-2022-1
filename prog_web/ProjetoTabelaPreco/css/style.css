@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', monospace;
+}
+
+.first-part {
+    display: flex;
+    flex-flow: row ;
+    height: 50vh;
+    background-color: #FFFAFA;
+}
+
+.second-part {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50vh;
+}
+/* deixando um espacamento para os elementos
+    da box proposal */
+.proposal {
+    padding: 40px;
+}
+/* estilizando o h2 */
+.proposal h2 {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #2F4F4F;
+}
+/* estilizando o h3 */
+.proposal h3 {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #3CB371;
+}
+/* estilizando o paragrafo */
+.proposal p {
+    color: #696969;
+    padding: 10px 20px 40px 0;
+}
+
+.card-price {
+    padding: 40px;
+    background-color: #008B8B;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+.header {
+    font-weight: bold;
+    font-size: large;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.price {
+    font-size: xx-large;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.price span {
+    padding: 0 0 0 20px;
+    font-size: large;
+    font-weight: lighter;
+    text-transform: none;
+    letter-spacing: 3px;
+}
+
+.message {
+    padding-bottom: 20px;
+    font-style: oblique;
+}
+
+.btn-sign {
+    background-color: #3CB371;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.btn-sign:hover {
+    background-color: #2F4F4F;
+}
+
+.card-about {
+    padding: 40px;
+    background-color: #48D1CC;
+    color: white;
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .first-part {
+        flex: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .second-part {
+        flex: flex;
+        flex-flow: column;
+    }
+    .second-part .card-price {
+        height: 100vh;
+        width: 100vw;
+    }
+    .second-part .card-about {
+        height: 100vh;
+        width: 100vw;
+    }
+}

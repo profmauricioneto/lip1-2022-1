@@ -6,7 +6,30 @@
         width: 300px;
         border: 10px solid brown;
         padding: 30px;
-        margin: 15px;
+        /* margin: 15px; */
+        text-align: justify;
+    }
+
+    .newDiv {
+        width: 400px;
+        text-align: justify;
+        line-height: 1;
+        background: lightblue;
+        color: black;
+        margin: 20px 80px 100px 40px;
+        border: solid #ccc;
+        border-width: 10px 30px 50px 15px;
+        padding: 35px 50px 20px 0;
+    }
+    p {
+        outline: 10px solid red;
+        outline-offset: 15px;
+        /* padding: 15px; */
+        /* border: 1px solid black; */
+    }
+    .newDiv2 {
+        max-width: 200px;
+        border: 1px solid blue;
     }
 </style>
 </head>
@@ -14,7 +37,23 @@
 <body>
     <h2>Lorem Ipsum</h2>
     <p>Example of lorem ipsum text showed following: </p>
-    <div>
+    <div style="position: fixed; top: 0; left: 0;">
+        <p>Example of lorem ipsum text showed following: </p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, mattis
+        pretium rhoncus ut, lacinia ac mauris. Praesent tellus nibh, placerat et lacinia in, hendrerit
+        quis dui.
+    </div>
+    <hr />
+    <div class="newDiv">
+        <p>Example of lorem ipsum text showed following: </p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, mattis
+        pretium rhoncus ut, lacinia ac mauris. Praesent tellus nibh, placerat et lacinia in, hendrerit
+        quis dui.
+    </div>
+
+    <hr />
+    <div class="newDiv2">
+        <p>Example of lorem ipsum text showed following: </p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien nulla, mattis
         pretium rhoncus ut, lacinia ac mauris. Praesent tellus nibh, placerat et lacinia in, hendrerit
         quis dui.

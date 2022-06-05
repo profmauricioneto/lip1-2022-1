@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            float: inline-start;
+            overflow: scroll;
+        }
+
+        #f-div {
+            background-color: green;
+            width: 33.33%;
+        }
+
+        #s-div {
+            background-color: blue;
+            width: 33.33%;
+        }
+
+        #t-div {
+            background-color: red;
+            width: 33.33%;
+        }
+
+        @media (max-width: 600px) {
+            #f-div {
+                width: 100%;
+            }
+            #s-div {
+                clear: left;
+                width: 50%;
+            }
+            #t-div {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="f-div">
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim.
+        Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex.
+        Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque
+        lorem maximus.
+    </div>
+    <div id="s-div">
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim.
+        Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex.
+        Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque
+        lorem maximus.
+    </div>
+    <div id="t-div">
+        Sed pretium commodo ligula, bibendum tempor libero fermentum at. Proin vestibulum velit enim.
+        Praesent in vulputate velit, ac facilisis tellus. Nullam vel justo elementum nunc suscipit eleifend id ac ex.
+        Maecenas fermentum tortor id felis commodo blandit. Morbi vulputate risus vel purus semper, eget scelerisque
+        lorem maximus.
+    </div>
+</body>
+</html>

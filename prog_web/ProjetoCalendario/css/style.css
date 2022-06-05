@@ -1,0 +1,96 @@
+/* fonte utilizada pelo calendário */
+* {
+    font-family: monospace;
+}
+/* retirando as marcações de ul */
+ul {
+    list-style-type: none;
+}
+/* definindo o alinhamento central da div */
+#calendario {
+    width: 50%;
+    margin: 0 auto;
+    align-content: center;
+}
+
+/* ajustando a div para os meses */
+#meses {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #F55;
+    border-radius: 10px 10px 0 0;
+    
+}
+/* retirando o espaçamento das ul */
+#meses ul {
+    margin: 0;
+    padding: 0;
+}
+/* ajustando o conteudo dos li's */
+#meses ul li {
+    font-weight: bold;
+    font-size: larger;
+    text-transform: uppercase;
+    color: white;
+}
+/* ajustando as setas de antes e depois */
+#meses .antes {
+    float: left;
+}
+
+#meses .depois {
+    float: right;
+}
+/* zerando a margem e adicionando um padding superior */
+#dias-semana {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #4F4F4F;
+}
+/* deixando todos os elementos na linha */
+#dias-semana li {
+    display: inline-block;
+    width: 12.9%;
+    text-align: center;
+    color: white;
+}
+/* Estilizando a área central */
+#dias-valores {
+    margin: 0;
+    padding: 15px 0;
+    background-color: #DCDCDC;
+    border-radius: 0 0 10px 10px;
+}
+/* alinhando todos os elementos como inline-block */
+#dias-valores li {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 12.9%;
+    font-size: 1em;
+    color: #363636;
+}
+/* estilizando o dia atual */
+#dias-valores li.ativo {
+    padding: 0.5em;
+    color: white;
+    background-color: #F55;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #calendario {
+        width: 100%;
+        margin: 0 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #dias-semana li,
+    #dias-valores li {
+        width: 11%;
+    }
+}
