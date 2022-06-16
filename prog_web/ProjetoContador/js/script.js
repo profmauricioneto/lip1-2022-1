@@ -20,7 +20,8 @@ function changeNumberColor(numberCounter) {
 
 // function when click in reset button 
 reset.addEventListener("click", function () {
-    var n = number.innerHTML = 0;
+    number.innerHTML = 0;
+    var n = number.textContent;
     number.style.color = changeNumberColor(n);
 });
 
